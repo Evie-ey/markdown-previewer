@@ -1,6 +1,8 @@
 import React from 'react';
 // import './styles/App.scss';
 import marked from 'marked';
+let sanitizeHtml = require('sanitize-html');
+
 
 class App extends React.Component {
   constructor(props) {
@@ -19,7 +21,7 @@ class App extends React.Component {
     console.log(this.state.content)
   }
   markedDown() {
-    let markup = marked(this.state.content,{sanitize: true});
+    let markup = marked(sanitizeHtml(this.state.content));
     return { __html: markup };
 
   }
