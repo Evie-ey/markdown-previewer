@@ -1,0 +1,38 @@
+.app {
+  main{
+    background-color: #f1dce6da;
+    padding: 40px;
+  }
+  .app-header {
+    text-align: center;
+    color: #f609bb;
+    padding: 25px 0;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    border: 1px solid #947b91;
+    background-color: #f609bbc2;
+    border-radius: 5px;
+  }
+
+  .editor textarea {
+    width: 100%;
+    min-height: 200px;
+    box-shadow: 1px 1px 10px 2px #5f3a3a;
+    margin-bottom: 15px;
+    background-color: #f508a63f;
+  }
+  
+  #preview {
+    min-height: 200px;
+    border: 1px solid rgba(119, 60, 60, 0.247);
+    box-shadow: 1px 1px 10px 2px #5f3a50;
+    word-break: break-word;
+    background-color: #f508a63f;
+  }
+
+}
+
